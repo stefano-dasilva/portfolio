@@ -55,9 +55,9 @@ const Home = () => {
               ENG
             </span>
           </div>
-        </div>        
+        </div>
         <div
-          className={`flex transition-all duration-[1500ms] delay-300  flex-row h-[50px] rounded-full items-center   bg-white   w-[90px] ${
+          className={`flex transition-all duration-[1500ms] delay-300  flex-row h-[50px] rounded-full items-center    bg-white   w-[90px] ${
             darkMode === false ? "bg-slate-400" : "bg-[#1d1d1d]"
           } `}
         >

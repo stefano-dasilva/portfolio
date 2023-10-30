@@ -18,7 +18,7 @@ function App() {
   },[darkMode])
 
   return (
-    <div className={` m-auto overflow-x-hidden overflow-y-hidden w-screen transition-color delay-700 duration-[1500ms] ${darkMode === false ? "bg-lightmodeback" : "bg-darkmodeback"} `}>
+    <div className={`App m-auto overflow-x-hidden  overflow-y-hidden w-screen transition-color delay-700 duration-[1500ms] ${darkMode === false ? "bg-lightmodeback" : "bg-darkmodeback"} `}>
       <Home />
       <About />
       <Skills />
