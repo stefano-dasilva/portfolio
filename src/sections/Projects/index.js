@@ -69,7 +69,7 @@ const projects = [
     },
   },
   {
-    link: "https://github.com/stefano-dasilva/progettodireti",
+    link: "https://github.com/stefano-dasilva/portfolio",
     skills: ["REACT", "VSCODE", "CSS", "HTML", "TAILWIND", "JAVASCRIPT"],
     title: {
       italiano: "Sito personale",
