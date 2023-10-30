@@ -23,7 +23,7 @@ const Projects = () => {
   const content = language === "english" ? "Projects" : "Progetti";
 
   return (
-    <div className={`w-[95%] mt-20 m-auto `}>
+    <div className={`w-[95%] mt-20 m-auto `} id="projects">
       <h1
         className={`font-poppins text-[48px] transition-all duration-[1500ms] mt-10 text-center ${
           darkMode === false ? "text-lightmodedark" : "text-darkmodedark"
@@ -31,14 +31,13 @@ const Projects = () => {
           animate ? "translate-y-0 opacity-100" : "translate-y-40 opacity-0"
         } `}
         ref={ref}
-        id="projects"
       >
         {content}
       </h1>
       <div className={` mt-6 flex justify-between flex-wrap  `}>
         {projects.map((project, index) => (
           <ProjectCard
-            animate ={animate}
+            animate={animate}
             index={index}
             title={project.title}
             link={project.link}

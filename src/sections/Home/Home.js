@@ -13,6 +13,11 @@ const Home = () => {
   const dispatch = useDispatch();
   const language = useSelector((state) => state.language.value);
   const darkMode = useSelector((state) => state.darkmode.value);
+
+  const handleScroll = (position) =>{
+    const element = document.getElementById(position);
+    element.scrollIntoView({ behavior: "smooth" });
+  }
  
   useEffect(() => {
     console.log(language);
@@ -119,6 +124,7 @@ const Home = () => {
             className={`px-8 py-4 rounded-xl  h-full w-1/2 lg:w-1/5 transition-color duration-[1500ms] delay-500 ${
               darkMode === false ? "bg-lightmodedark" : "bg-darkmodedark"
             } `}
+            onClick={() => handleScroll("projects")}
           >
             {language === "english" ? "My projects" : "Progetti"}
           </button>
