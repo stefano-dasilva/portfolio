@@ -89,7 +89,7 @@ const About = () => {
           {title_language}
         </h2>
         <div className={`  w-[90%] mt-5 mx-auto `}>
-          <p
+          <div
             className={` transition-all duration-[1500ms] delay-500 font-karla leading-[35px] ${
               darkMode === false ? "text-lightmodetext" : "text-slate-300"
             } ${
@@ -148,7 +148,7 @@ const About = () => {
                 </div>
               </div>
             </div>
-          </p>
+          </div>
         </div>
       </section>
     </>

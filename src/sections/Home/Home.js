@@ -19,9 +19,7 @@ const Home = () => {
     element.scrollIntoView({ behavior: "smooth" });
   }
  
-  useEffect(() => {
-    console.log(language);
-  }, [language]);
+ 
 
   const handleLanguage = (language) => {
     dispatch(setLanguage(language));
