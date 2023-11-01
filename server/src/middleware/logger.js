@@ -11,7 +11,9 @@ const logger = winston.createLogger({
 });
 
 const loggermiddleware = (req, res, next) => {
-  const logmessage = `${new Date()} - ${req.method} ${req.url}\n`;
+  const logmessage = `${new Date()} - IP: ${req.ip} - ${req.method} ${
+    req.url
+  }\n`;
   logger.info(logmessage);
 
   next();
