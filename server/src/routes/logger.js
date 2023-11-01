@@ -1,11 +1,11 @@
 import express from "express"
-import logger from "../middleware/logger.js"
+import loggermiddleware from "../middleware/logger.js"
 import log from "../controllers/logger.js"
 
 
 const router = express.Router()
 
-router.use(logger)
+router.use(loggermiddleware)
 
 router.route("/").get(log)
 

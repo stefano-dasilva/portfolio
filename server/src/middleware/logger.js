@@ -1,16 +1,18 @@
-import fs from 'fs';
+import winston from "winston";
+import { Logtail } from "@logtail/node";
+import { LogtailTransport } from "@logtail/winston";
 
+const logtail = new Logtail("mPozsMZwFeo6geJBNpPwMWdf");
 
-const logger = (req,res,next) =>{
-    const log = `${new Date()} - ${req.method} ${req.url}\n`;
+const logger = winston.createLogger({
+  transports: [new LogtailTransport(logtail)],
+});
 
-    fs.appendFile("access.log", log, (err) => {
-      if (err) {
-        console.error("Errore nella scrittura del file di log:", err);
-      }
-    });
+const loggermiddleware = (req, res, next) => {
+  const logmessage = `${new Date()} - ${req.method} ${req.url}\n`;
+  logger.info(logmessage);
 
-    next();
-}
+  next();
+};
 
-export default logger
+export default loggermiddleware;
