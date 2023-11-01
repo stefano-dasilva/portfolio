@@ -1,11 +1,15 @@
 import winston from "winston";
-import { Logtail } from "@logtail/node";
-import { LogtailTransport } from "@logtail/winston";
+import WinstonTelegram from "winston-telegram";
 
-const logtail = new Logtail("mPozsMZwFeo6geJBNpPwMWdf");
+// Configura il trasporto di Telegram
+const telegramTransport = new WinstonTelegram({
+  token: "6896175365:AAE9OdBc-6jsiQ100BE7Mt7QSTgquByT0cI",
+  chatId: "390795682",
+});
 
+// Configura il logger di Winston
 const logger = winston.createLogger({
-  transports: [new LogtailTransport(logtail)],
+  transports: [telegramTransport],
 });
 
 const loggermiddleware = (req, res, next) => {
