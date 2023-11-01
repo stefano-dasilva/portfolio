@@ -9,7 +9,6 @@ app.use(
   cors({
     origin: ["https://stefanodasilva.vercel.app"],
     methods: ["GET"],
-    credentials: true, 
   })
 );
 
