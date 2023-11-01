@@ -6,6 +6,8 @@ const telegramTransport = new WinstonTelegram({
   chatId: process.env.CHAT_ID,
 });
 
+telegramTransport.setMaxListeners(20);
+
 const logger = winston.createLogger({
   transports: [telegramTransport],
 });
