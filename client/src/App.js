@@ -5,7 +5,7 @@ import Skills from "./sections/Skills/Skills";
 import Projects from "./sections/Projects/Projects";
 import Contacts from "./sections/Contacts/Contacts";
 import { useSelector } from "react-redux";
-import { useEffect } from "react";
+import { useEffect, useState} from "react";
 import axios from "axios";
 
 function App() {
