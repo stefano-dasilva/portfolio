@@ -10,11 +10,11 @@ const logger = winston.createLogger({
   transports: [telegramTransport],
 });
 
-const loggermiddleware = (req, res, next) => {
+const loggermiddleware =   (req, res, next) => {
   const logmessage = `${new Date()} - IP: ${req.ip} - ${req.method} ${
     req.url
   }\n`;
-  logger.info(logmessage);
+    logger.info(logmessage);
 
   next();
 };
