@@ -2,8 +2,8 @@ import winston from "winston";
 import WinstonTelegram from "winston-telegram";
 
 const telegramTransport = new WinstonTelegram({
-  token: "6896175365:AAE9OdBc-6jsiQ100BE7Mt7QSTgquByT0cI",
-  chatId: "390795682",
+  token: process.env.TELEGRAM_TOKEN,
+  chatId: process.env.CHAT_ID,
 });
 
 const logger = winston.createLogger({
