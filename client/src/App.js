@@ -16,7 +16,7 @@ function App() {
 
   const handleLogger = async () => {
     try {
-      await axios.get(`stefanodasilva-api.vercel.app`);
+      await axios.get(`https://stefano-da-silva-api.vercel.app`);
     } catch (err) {
       console.log(err);
     }
