@@ -14,11 +14,9 @@ function App() {
   };
   const darkMode = useSelector((state) => state.darkmode.value);
 
- 
-
   const handleLogger = async () => {
     try {
-      await axios.get(`http://localhost:3001/`);
+      await axios.get(`stefano-da-silva-api.vercel.app`);
     } catch (err) {
       console.log(err);
     }
