@@ -1,13 +1,15 @@
 import express from "express";
 import { logroute } from "./src/routes/logger.js";
 import cors from "cors";
+import dotenv from "dotenv";
+dotenv.config();
 
 const app = express();
 
 app.use(express.json());
 app.use(
   cors({
-    origin: "https://stefanodasilva.vercel.app",
+    origin: ["https://stefanodasilva.vercel.app", "http://localhost:3000"],
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   })
 );
