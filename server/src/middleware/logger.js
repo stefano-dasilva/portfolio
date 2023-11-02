@@ -16,7 +16,8 @@ const loggermiddleware =   (req, res, next) => {
   const logmessage = `${new Date()} - IP: ${req.ip} - ${req.method} ${
     req.url
   }\n`;
-    logger.info(logmessage);
+    logger.info(logmessage);+
+    console.log("entrato")
 
   next();
 };
