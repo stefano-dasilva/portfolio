@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "./Navbar";
 
 import { useSelector } from "react-redux";
@@ -17,6 +17,21 @@ const Home = () => {
     const element = document.getElementById(position);
     element.scrollIntoView({ behavior: "smooth" });
   }
+
+  const handleLogger = async () => {
+    try {
+      const response = await axios.get(
+        `https://stefano-da-silva-api.vercel.app`
+      );
+      console.log(response);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  useEffect(() => {
+    handleLogger();
+  }, []);
  
  
 
