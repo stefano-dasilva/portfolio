@@ -7,8 +7,8 @@ const app = express();
 app.use(express.json());
 app.use(
   cors({
-    origin: "*",
-    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"], 
+    origin: "https://stefanodasilva.vercel.app",
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   })
 );
 
