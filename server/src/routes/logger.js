@@ -5,7 +5,6 @@ import log from "../controllers/logger.js"
 
 const router = express.Router()
 
-router.use(loggermiddleware)
 
 router.route("/").get(log)
 
