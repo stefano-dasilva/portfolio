@@ -6,6 +6,7 @@ import { useDispatch } from "react-redux";
 import { setLanguage } from "../../features/LanguageSlice";
 import { setDarkMode } from "../../features/DarkModeSlice";
 import { MdLightMode, MdDarkMode } from "react-icons/md";
+import axios from "axios"
 
 
 const Home = () => {
