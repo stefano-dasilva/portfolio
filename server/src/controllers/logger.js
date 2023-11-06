@@ -3,6 +3,7 @@ import WinstonTelegram from "winston-telegram";
 import { LoggerModel } from "../models/LoggerModel.js";
 const log = async (req, res) => {
 
+    const {date} = req.body
 
   try {
     const telegramTransport = new WinstonTelegram({
@@ -22,10 +23,9 @@ const log = async (req, res) => {
 
 
     const visit_IP = req.ip;
-    const hours = new Date();
 
     const newlog = new LoggerModel({
-      date: hours,
+      date: date,
       IP: visit_IP,
     });
 
