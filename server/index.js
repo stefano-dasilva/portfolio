@@ -17,6 +17,6 @@ app.use(
 
 app.use("/", logroute);
 
-mongoose.connect(process.env.MONGO_URI);
+mongoose.connect(process.env.MONGODB_URI);
 
 app.listen(process.env.PORT || 3001, () => console.log("Listening..."));
