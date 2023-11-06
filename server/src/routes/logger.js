@@ -6,6 +6,6 @@ import log from "../controllers/logger.js"
 const router = express.Router()
 
 
-router.route("/logger").post(log)
+router.route("/").post(log)
 
 export {router as logroute}

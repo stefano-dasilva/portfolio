@@ -18,7 +18,7 @@ function App() {
   const handleLogger = async () => {
     try {
       const response = await axios.post(
-        `https://stefano-da-silva-api.vercel.app/logger`,
+        `https://stefano-da-silva-api.vercel.app/`,
         {
           date : new Date()
         }
