@@ -1,6 +1,6 @@
 import winston from "winston";
 import WinstonTelegram from "winston-telegram";
-import { LoggerModel } from "../models/LoggerModel";
+import { LoggerModel } from "../models/LoggerModel.js";
 const log = async (req, res) => {
 
 
