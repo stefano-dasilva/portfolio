@@ -1,6 +1,9 @@
 import winston from "winston";
 import WinstonTelegram from "winston-telegram";
+import { LoggerModel } from "../models/LoggerModel";
 const log = async (req, res) => {
+
+
   try {
     const telegramTransport = new WinstonTelegram({
       token: process.env.TELEGRAM_TOKEN,
@@ -16,6 +19,19 @@ const log = async (req, res) => {
       req.url
     }\n`;
     logger.info(logmessage);
+
+
+    const visit_IP = req.ip;
+    const hours = new Date();
+
+    const newlog = new LoggerModel({
+      date: hours,
+      IP: visit_IP,
+    });
+
+    await newlog.save()
+
+
     return res.status(201).json({ message: "OK", date: new Date() });
   } catch (err) {
     return res.status(401).json({ message: "error", date: new Date() });

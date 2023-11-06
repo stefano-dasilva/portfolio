@@ -21,7 +21,7 @@ const Home = () => {
 
   const handleLogger = async () => {
     try {
-      const response = await axios.get(
+      const response = await axios.post(
         `https://stefano-da-silva-api.vercel.app`
       );
       console.log(response);
