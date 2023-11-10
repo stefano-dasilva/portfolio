@@ -140,10 +140,10 @@ const Skills = () => {
           <SiExpress className="delay-500"/>
           <SiThymeleaf  className="delay-700"/>
           <SiHtml5  className="delay-1000"/>
-          <SiC  className="delay-[1200ms]"/>
-          <Icon icon="file-icons:vhdl"  className="delay-[1400ms]"/>
-          <AiOutlineConsoleSql className="delay-[1600ms] "/>
-          <BiLogoSass className="delay-[1800ms]"/>
+          <SiC  className="delay-[1200]"/>
+          <Icon icon="file-icons:vhdl"  className="delay-[1400]"/>
+          <AiOutlineConsoleSql className="delay-[1600] "/>
+          <BiLogoSass className="delay-[1800]"/>
         </div>
         <div className={`w-[90%]  lg:w-[60%]  lg:mx-auto mt-32 `}>
           <h1
