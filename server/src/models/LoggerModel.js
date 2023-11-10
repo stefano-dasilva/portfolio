@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const LoggerSchema = new mongoose.Schema({
   date: {
-    type: Date,
+    type: String,
   },
   IP: {
     type: String,

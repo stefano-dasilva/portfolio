@@ -44,7 +44,7 @@ const log = async (req, res) => {
 
     return res.status(201).json({ message: "OK", date: new Date() });
   } catch (err) {
-    return res.status(401).json({ message: "error", date: new Date() });
+    return res.status(500).json({ message: "error", date: new Date() });
   }
 };
 
