@@ -15,10 +15,18 @@ const log = async (req, res) => {
     const clientIP =
       req.headers["x-forwarded-for"] || req.connection.remoteAddress;
 
+      const formattedDate = date.toLocaleString("it-IT", {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+        hour: "2-digit",
+        minute: "2-digit",
+      });
+
     const logger = winston.createLogger({
       transports: [telegramTransport],
     });
-    const logmessage = `${new Date()} - IP: ${clientIP} - ${req.method} ${
+    const logmessage = `${formattedDate} - IP: ${clientIP} - ${req.method} ${
       req.url
     }\n`;
     logger.info(logmessage);
@@ -26,7 +34,7 @@ const log = async (req, res) => {
     const visit_IP = req.ip;
 
     const newlog = new LoggerModel({
-      date: date,
+      date: formattedDate,
       IP: clientIP,
     });
 
