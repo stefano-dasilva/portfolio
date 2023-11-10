@@ -1,5 +1,38 @@
 const projects = [
   {
+    link: "https://github.com/stefano-dasilva/portfolio",
+    skills: ["REACT", "VSCODE", "CSS", "HTML", "TAILWIND", "JAVASCRIPT"],
+    title: {
+      italiano: "Sito personale",
+      english: "Personal website",
+    },
+    content: {
+      italiano: "",
+      english: "",
+    },
+  },
+  {
+    link: "https://github.com/stefano-dasilva/albums",
+    skills: [
+      "REACT",
+      "VSCODE",
+      "SASS",
+      "HTML",
+      "JAVASCRIPT",
+      "EXPRESS",
+      "MONGODB",
+      "TYPESCRIPT",
+    ],
+    title: {
+      italiano: "Full stack album webapp MERN",
+      english: "Full stack album webapp MERN",
+    },
+    content: {
+      italiano: "",
+      english: "",
+    },
+  },
+  {
     link: "https://github.com/stefano-dasilva/progettodireti",
     skills: ["VHDL", "LATEX"],
     title: {
@@ -60,41 +93,8 @@ const projects = [
       "JAVASCRIPT",
     ],
     title: {
-      italiano: "Progetto MERN",
-      english: "Mern Project",
-    },
-    content: {
-      italiano: "",
-      english: "",
-    },
-  },
-  {
-    link: "https://github.com/stefano-dasilva/portfolio",
-    skills: ["REACT", "VSCODE", "CSS", "HTML", "TAILWIND", "JAVASCRIPT"],
-    title: {
-      italiano: "Sito personale",
-      english: "Personal website",
-    },
-    content: {
-      italiano: "",
-      english: "",
-    },
-  },
-  {
-    link: "https://github.com/stefano-dasilva/albums",
-    skills: [
-      "REACT",
-      "VSCODE",
-      "SASS",
-      "HTML",
-      "JAVASCRIPT",
-      "EXPRESS",
-      "MONGODB",
-      "TYPESCRIPT",
-    ],
-    title: {
-      italiano: "Full stack album webapp MERN",
-      english: "Full stack album webapp MERN",
+      italiano: "Full stack MERN trasferimento denaro",
+      english: "Full stack MERN money transfer",
     },
     content: {
       italiano: "",
