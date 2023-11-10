@@ -80,6 +80,27 @@ const projects = [
       english: "",
     },
   },
+  {
+    link: "https://github.com/stefano-dasilva/albums",
+    skills: [
+      "REACT",
+      "VSCODE",
+      "SASS",
+      "HTML",
+      "JAVASCRIPT",
+      "EXPRESS",
+      "MONGODB",
+      "TYPESCRIPT",
+    ],
+    title: {
+      italiano: "Full stack album webapp MERN",
+      english: "Full stack album webapp MERN",
+    },
+    content: {
+      italiano: "",
+      english: "",
+    },
+  },
 ];
 
 export default projects;

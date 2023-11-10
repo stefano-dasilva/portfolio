@@ -22,6 +22,7 @@ import {
   BiLogoMongodb,
   BiLogoJava,
   BiLogoJavascript,
+  BiLogoSass,
 } from "react-icons/bi";
 import { Icon } from "@iconify/react";
 import { TbBrandVscode } from "react-icons/tb";
@@ -130,18 +131,19 @@ const Skills = () => {
             darkMode === false ? "text-lightmodelight" : "text-darkmodelight"
           }`}
         >
-          <BiLogoReact />
-          <BiLogoMongodb />
-          <BiLogoTailwindCss />
-          <BiLogoJavascript />
-          <BiLogoCss3 />
-          <BiLogoJava />
-          <SiExpress />
-          <SiThymeleaf />
-          <SiHtml5 />
-          <SiC />
-          <Icon icon="file-icons:vhdl" />
-          <AiOutlineConsoleSql />
+          <BiLogoReact className="delay-0" />
+          <BiLogoMongodb  className="delay-75"/>
+          <BiLogoTailwindCss className="delay-100 "/>
+          <BiLogoJavascript className="delay-150 "/>
+          <BiLogoCss3  className="delay-200"/>
+          <BiLogoJava  className="delay300-"/>
+          <SiExpress className="delay-500"/>
+          <SiThymeleaf  className="delay-700"/>
+          <SiHtml5  className="delay-1000"/>
+          <SiC  className="delay-[1200ms]"/>
+          <Icon icon="file-icons:vhdl"  className="delay-[1400ms]"/>
+          <AiOutlineConsoleSql className="delay-[1600ms] "/>
+          <BiLogoSass className="delay-[1800ms]"/>
         </div>
         <div className={`w-[90%]  lg:w-[60%]  lg:mx-auto mt-32 `}>
           <h1

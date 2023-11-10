@@ -11,6 +11,7 @@ import {
   SiLatex,
   SiHtml5,
   SiApachemaven,
+  SiTypescript,
 } from "react-icons/si";
 import { AiOutlineConsoleSql } from "react-icons/ai";
 import {
@@ -20,6 +21,7 @@ import {
   BiLogoMongodb,
   BiLogoJava,
   BiLogoJavascript,
+  BiLogoSass,
 } from "react-icons/bi";
 import { Icon } from "@iconify/react";
 import { TbBrandVscode } from "react-icons/tb";
@@ -106,6 +108,12 @@ const ProjectCard = ({ link, title, skills,animate,index }) => {
             />
             <TbBrandVscode
               className={`${skills.includes("VSCODE") ? "flex" : "hidden"}`}
+            />
+            <BiLogoSass
+              className={`${skills.includes("SASS") ? "flex" : "hidden"}`}
+            />
+            <SiTypescript
+              className={`${skills.includes("TYPESCRIPT") ? "flex" : "hidden"}`}
             />
           </div>
         </div>
