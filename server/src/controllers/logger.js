@@ -15,7 +15,10 @@ const log = async (req, res) => {
     const clientIP =
       req.headers["x-forwarded-for"] || req.connection.remoteAddress;
 
-      const formattedDate = date.toLocaleString("it-IT", {
+    
+      const new_date = new Date()
+
+      const formattedDate = new_date.toLocaleString("it-IT", {
         year: "numeric",
         month: "long",
         day: "numeric",
@@ -31,7 +34,6 @@ const log = async (req, res) => {
     }\n`;
     logger.info(logmessage);
 
-    const visit_IP = req.ip;
 
     const newlog = new LoggerModel({
       date: formattedDate,
