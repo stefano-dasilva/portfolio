@@ -101,6 +101,27 @@ const projects = [
       english: "",
     },
   },
+  {
+    link: "https://github.com/stefano-dasilva/social_ste",
+    skills: [
+      "REACT",
+      "VSCODE",
+      "SASS",
+      "HTML",
+      "JAVASCRIPT",
+      "EXPRESS",
+      "MONGODB",
+      "TYPESCRIPT",
+    ],
+    title: {
+      italiano: "Twitter frontend Mockup",
+      english: "Twitter frontend Mockup",
+    },
+    content: {
+      italiano: "",
+      english: "",
+    },
+  },
 ];
 
 export default projects;

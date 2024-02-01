@@ -5,7 +5,7 @@ import content from ".";
 import { BsPlayFill, BsPauseFill } from "react-icons/bs";
 import { MdOutlineReplay } from "react-icons/md";
 import { TbMovie } from "react-icons/tb";
-const audio = new Audio("/phoebe.mp3");
+const audio = new Audio("/mitski.mp3");
 
 const About = () => {
   const [animate, setAnimate] = useState(false);
@@ -101,7 +101,9 @@ const About = () => {
             <div className="flex flex-col">
               <div>
                 <h1 className="font-karla mt-6 text-base text-center">
-                 {language === "english" ? "My week favourites" : "I preferiti della settimana"}
+                  {language === "english"
+                    ? "My week favourites"
+                    : "I preferiti della settimana"}
                 </h1>
               </div>
               <div className="flex flex-row justify-around items-center mt-6">
@@ -129,21 +131,28 @@ const About = () => {
                     onClick={handlePlay}
                   />
                   <div className="flex flex-col">
-                    <span className="font-karla text-sm lg:text-lg">Motion Sickness</span>
-                    <span className="font-karla text-xs lg:text-base">Phoebe bridgers </span>
+                    <span className="font-karla text-sm lg:text-lg">
+                      My Love Mine All Mine
+                    </span>
+                    <span className="font-karla text-xs lg:text-base">
+                      Mitski{" "}
+                    </span>
                   </div>
                 </div>
                 <div className="flex flex-row items-center gap-4 lg:gap-6">
                   <a
-                    href="https://www.youtube.com/watch?v=P15S6ND8kbQ"
+                    href="https://www.youtube.com/watch?v=RlbR5N6veqw"
                     target="_blank "
                     rel="noreferrer"
                   >
                     <TbMovie className="text-[20px] cursor-pointer" />
                   </a>
                   <div className="flex flex-col">
-                    <span className="text-sm lg:text-lg">No Hard Feelings</span>
-                    <span className="text-xs lg:text-base"> Gene Stupnitsky</span>
+                    <span className="text-sm lg:text-lg">Poor things</span>
+                    <span className="text-xs lg:text-base">
+                      {" "}
+                      Yorgos Lanthimos
+                    </span>
                   </div>
                 </div>
               </div>
