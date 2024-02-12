@@ -12,6 +12,48 @@ const projects = [
     },
   },
   {
+    link: "https://github.com/stefano-dasilva/e-commerce",
+    skills: [
+      "REACT",
+      "VSCODE",
+      "SASS",
+      "HTML",
+      "JAVASCRIPT",
+      "EXPRESS",
+      "MONGODB",
+      "TYPESCRIPT",
+    ],
+    title: {
+      italiano: "E-commerce sample",
+      english: "E-commerce sample",
+    },
+    content: {
+      italiano: "",
+      english: "",
+    },
+  },
+  {
+    link: "https://github.com/stefano-dasilva/social_ste",
+    skills: [
+      "REACT",
+      "VSCODE",
+      "SASS",
+      "HTML",
+      "JAVASCRIPT",
+      "EXPRESS",
+      "MONGODB",
+      "TYPESCRIPT",
+    ],
+    title: {
+      italiano: "Twitter frontend Mockup",
+      english: "Twitter frontend Mockup",
+    },
+    content: {
+      italiano: "",
+      english: "",
+    },
+  },
+  {
     link: "https://github.com/stefano-dasilva/albums",
     skills: [
       "REACT",
@@ -69,18 +111,6 @@ const projects = [
     },
   },
   {
-    link: "https://github.com/stefano-dasilva/quotemanagm",
-    skills: ["HTML", "CSS", "ECLIPSE", "JAVA", "MYSQL", "THYMELEAF"],
-    title: {
-      italiano: "Esame tecnologie informative Politecnico",
-      english: "Politecnico Information Technologies Exam",
-    },
-    content: {
-      italiano: "",
-      english: "",
-    },
-  },
-  {
     link: "https://github.com/stefano-dasilva/bank_APP",
     skills: [
       "HTML",
@@ -102,20 +132,11 @@ const projects = [
     },
   },
   {
-    link: "https://github.com/stefano-dasilva/social_ste",
-    skills: [
-      "REACT",
-      "VSCODE",
-      "SASS",
-      "HTML",
-      "JAVASCRIPT",
-      "EXPRESS",
-      "MONGODB",
-      "TYPESCRIPT",
-    ],
+    link: "https://github.com/stefano-dasilva/quotemanagm",
+    skills: ["HTML", "CSS", "ECLIPSE", "JAVA", "MYSQL", "THYMELEAF"],
     title: {
-      italiano: "Twitter frontend Mockup",
-      english: "Twitter frontend Mockup",
+      italiano: "Esame tecnologie informative Politecnico",
+      english: "Politecnico Information Technologies Exam",
     },
     content: {
       italiano: "",
